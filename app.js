@@ -18,7 +18,6 @@ const resultado= [];
 let x=0;
 resultado[0]=input.value; 
 
-
 (function () {
   [...document.querySelectorAll(".control")].forEach(button => {
       button.addEventListener("click", function() {
@@ -33,18 +32,19 @@ resultado[0]=input.value;
   buttonA.addEventListener("click",function(event){
   while (x<a.length) {
       resultado[0]=resultado[0].replace(a[x],b[x]);    
-      textoD.textContent=resultado[0];
+      textoE.textContent=resultado[0];
       x=x+1;    
     }  
   });
 
   buttonB.addEventListener("click",function(event){
-    textoE.textContent=input.value;
+    textoD.textContent=input.value;
   });
 
-  const txHeight = 16;
+
+
+  const txHeight = 40;
   const tx = document.getElementsByTagName("textarea");
-  
   for (let i = 0; i < tx.length; i++) {
     if (tx[i].value == '') {
       tx[i].setAttribute("style", "height:" + txHeight + "px;overflow-y:hidden;");
@@ -52,8 +52,7 @@ resultado[0]=input.value;
       tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
     }
     tx[i].addEventListener("input", OnInput, false);
-  }
-  
+  }  
   function OnInput(e) {
     this.style.height = "auto";
     this.style.height = (this.scrollHeight) + "px";

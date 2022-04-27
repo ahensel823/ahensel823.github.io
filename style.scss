@@ -71,14 +71,15 @@ section{
     }     
 }
 aside{
-    margin-top: 20px;         
+    margin-top: 20px;        
     margin: 32px 32px 32px 32px;    
     border-radius: 20px 20px 20px 20px;       
-    background: #FFFFFF;     
+    background: #FFFFFF;    
+   
     .input{        
         text-align: center;
-        font-size: 30px;
-        padding: 20px;
+        font-size: 30px;   
+        width: 100%;
         border-style: none;       
     }     
 }
