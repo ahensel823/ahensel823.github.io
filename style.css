@@ -95,6 +95,7 @@ aside {
 aside .input {
   text-align: center;
   font-size: 30px;
+  height: 60px;
   padding: 20px;
   border-style: none;
 }
